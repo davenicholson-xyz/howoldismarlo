@@ -13,7 +13,19 @@
 		<h2>Marlo is...</h2>
 	</div>
 	<h2><span class="timer">{days}</span> days</h2>
+	<svg xmlns="http://www.w3.org/2000/svg" width="2.4em" height="2.4em" viewBox="0 0 24 24"
+		><path
+			fill="currentColor"
+			d="M8 14a3 3 0 0 1-3 3a3 3 0 0 1-3-3c0-.77.29-1.47.76-2c-.47-.53-.76-1.23-.76-2a3 3 0 0 1 3-3a3 3 0 0 1 3 3c1.33.08 2.67.17 4 .17s2.67-.09 4-.17a3 3 0 0 1 3-3a3 3 0 0 1 3 3c0 .77-.29 1.47-.76 2c.47.53.76 1.23.76 2a3 3 0 0 1-3 3a3 3 0 0 1-3-3c-1.33-.08-2.67-.17-4-.17s-2.67.09-4 .17"
+		/></svg
+	>
 	<h2><span class="timer">{weeks}</span> weeks</h2>
+	<svg xmlns="http://www.w3.org/2000/svg" width="2.4em" height="2.4em" viewBox="0 0 24 24"
+		><path
+			fill="currentColor"
+			d="M8 14a3 3 0 0 1-3 3a3 3 0 0 1-3-3c0-.77.29-1.47.76-2c-.47-.53-.76-1.23-.76-2a3 3 0 0 1 3-3a3 3 0 0 1 3 3c1.33.08 2.67.17 4 .17s2.67-.09 4-.17a3 3 0 0 1 3-3a3 3 0 0 1 3 3c0 .77-.29 1.47-.76 2c.47.53.76 1.23.76 2a3 3 0 0 1-3 3a3 3 0 0 1-3-3c-1.33-.08-2.67-.17-4-.17s-2.67.09-4 .17"
+		/></svg
+	>
 	<h2><span class="timer">{months}</span> months</h2>
 	<div class="marlo">
 		<img src={marlo} alt="marlo" />
@@ -23,7 +35,9 @@
 <style>
 	:global(body) {
 		background: rgb(2, 0, 36);
-		background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 4, 61, 1) 100%);
+		background-color: #92c4e8;
+		background-image: linear-gradient(to right, #141e30, #243b55);
+
 		color: rgba(255, 255, 255, 0.937);
 		height: 100vh;
 		font-family: Acme;
@@ -38,15 +52,20 @@
 		min-height: 100vh;
 	}
 
+	h2 {
+		text-shadow: 2px 2px 5px black;
+	}
+
 	.header {
 		position: absolute;
 		width: 100%;
 		top: 0px;
 		left: 50%;
 		text-align: center;
-		transform: translate(-50%, 80px);
+		transform: translate(-50%, 40px);
 		font-size: 3em;
 		text-shadow: 3px 3px 5px black;
+		color: goldenrod;
 	}
 
 	.timer {
